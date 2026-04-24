@@ -1,0 +1,17 @@
+﻿/* Apply hiding only when extension is enabled */
+html[data-shorts-hider-enabled="true"] ytd-guide-entry-renderer:has(a[href^="/shorts/"], a[title="Shorts"], a[title="Короткие видео"]),
+html[data-shorts-hider-enabled="true"] ytd-mini-guide-entry-renderer:has(a[href^="/shorts/"], a[title="Shorts"], a[title="Короткие видео"]),
+html[data-shorts-hider-enabled="true"] ytd-reel-shelf-renderer,
+html[data-shorts-hider-enabled="true"] ytd-rich-shelf-renderer:has(a[href*="/shorts/"]),
+html[data-shorts-hider-enabled="true"] ytd-rich-item-renderer:has(a[href*="/shorts/"]),
+html[data-shorts-hider-enabled="true"] ytd-video-renderer:has(a[href*="/shorts/"]),
+html[data-shorts-hider-enabled="true"] ytd-grid-video-renderer:has(a[href*="/shorts/"]),
+html[data-shorts-hider-enabled="true"] ytd-compact-video-renderer:has(a[href*="/shorts/"]),
+html[data-shorts-hider-enabled="true"] ytd-rich-section-renderer[is-shorts],
+html[data-shorts-hider-enabled="true"] ytd-horizontal-list-renderer[is-shorts],
+html[data-shorts-hider-enabled="true"] ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"],
+html[data-shorts-hider-enabled="true"] ytd-tab-short-renderer,
+html[data-shorts-hider-enabled="true"] tp-yt-paper-tab[aria-label="Shorts"],
+html[data-shorts-hider-enabled="true"] tp-yt-paper-tab[aria-label="Короткие видео"] {
+  display: none !important;
+}
